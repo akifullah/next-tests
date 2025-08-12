@@ -4,7 +4,7 @@ import { store, persistor } from "../../store/store";
 import { makeStore } from '../../store/store';
 import { PersistGate } from "redux-persist/integration/react";
 
-function ReduxProvider({ children: any, initialState: any  }) {
+function ReduxProvider({ children, initialState }) {
 
     const store = makeStore(initialState, { isServer: false });
     const persistor = store.__persistor;
