@@ -29,7 +29,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         cz-shortcut-listen="true"
       >
-        <ReduxProvider initialState={{}}>
+        <ReduxProvider initialState>
           {children}
         </ReduxProvider>
       </body>
